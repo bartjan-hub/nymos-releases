@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+  <channel>
+    <title>Nymos</title>
+    <link>https://raw.githubusercontent.com/bartjan-hub/nymos-releases/main/appcast.xml</link>
+    <description>Updates for Nymos.</description>
+    <language>en</language>
+    <!--
+      Sparkle's update feed. No <item> elements means "no updates available",
+      which is the correct state until the first signed release ships.
+
+      Each release adds one <item>, newest first:
+
+      <item>
+        <title>1.0.1</title>
+        <pubDate>Tue, 05 Aug 2026 10:00:00 +0000</pubDate>
+        <sparkle:version>101</sparkle:version>              CFBundleVersion (build)
+        <sparkle:shortVersionString>1.0.1</sparkle:shortVersionString>
+        <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+        <description><![CDATA[ <ul><li>What changed.</li></ul> ]]></description>
+        <enclosure
+          url="https://github.com/bartjan-hub/nymos-releases/releases/download/v1.0.1/Nymos-1.0.1.dmg"
+          sparkle:edSignature="<from Sparkle's sign_update tool>"
+          length="<exact file size in bytes>"
+          type="application/octet-stream" />
+      </item>
+
+      The edSignature comes from Sparkle's `sign_update` run against the DMG
+      with the private EdDSA key. That key is NOT in this repository and must
+      never be committed — it lives in the Keychain on the release machine.
+      Losing it means existing installs can never be updated again.
+    -->
+  </channel>
+</rss>
