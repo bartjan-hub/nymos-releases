@@ -6,29 +6,19 @@
     <description>Updates for Nymos.</description>
     <language>en</language>
     <!--
-      Sparkle's update feed. No <item> elements means "no updates available",
-      which is the correct state until the first signed release ships.
+      LEGACY BRIDGE FEED (2026-07-29).
 
-      Each release adds one <item>, newest first:
+      Nymos 1.0 shipped with SUFeedURL pointing at this file, so it has to keep
+      existing and this repository has to stay public until no 1.0 installs
+      remain. Its only job is to hand those installs an enclosure URL on
+      nymos.io; GitHub no longer serves the binary.
 
-      <item>
-        <title>1.0.1</title>
-        <pubDate>Tue, 05 Aug 2026 10:00:00 +0000</pubDate>
-        <sparkle:version>101</sparkle:version>              CFBundleVersion (build)
-        <sparkle:shortVersionString>1.0.1</sparkle:shortVersionString>
-        <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-        <description><![CDATA[ <ul><li>What changed.</li></ul> ]]></description>
-        <enclosure
-          url="https://github.com/bartjan-hub/nymos-releases/releases/download/v1.0.1/Nymos-1.0.1.dmg"
-          sparkle:edSignature="<from Sparkle's sign_update tool>"
-          length="<exact file size in bytes>"
-          type="application/octet-stream" />
-      </item>
+      THE FEED THAT MATTERS NOW IS https://nymos.io/appcast.xml — edit that one
+      (public/appcast.xml in the nymos-website repo) for every release. Keep the
+      <item> list here in sync ONLY while 1.0 installs are still out there.
 
-      The edSignature comes from Sparkle's `sign_update` run against the DMG
-      with the private EdDSA key. That key is NOT in this repository and must
-      never be committed — it lives in the Keychain on the release machine.
-      Losing it means existing installs can never be updated again.
+      Once the app ships with SUFeedURL = https://nymos.io/appcast.xml and 1.0
+      is gone, this repository can be made private or deleted outright.
     -->
     <item>
       <title>1.0</title>
@@ -39,7 +29,7 @@
       <description><![CDATA[
         <p>First public release.</p>
       ]]></description>
-      <enclosure url="https://github.com/bartjan-hub/nymos-releases/releases/download/v1.0/Nymos-1.0.dmg"
+      <enclosure url="https://nymos.io/nymos.dmg"
         type="application/octet-stream"
         sparkle:edSignature="kcxmCGGn17qWKGzXSSuCo0OevPP8CMingDvMmZZPIFMZSFXaPdsQsSNDCSYqdkkPecAi9rUUcr1Q0tPABau2DQ==" length="2601667" />
     </item>
