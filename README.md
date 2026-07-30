@@ -9,7 +9,7 @@ say-so.
 
 ## Download
 
-**[Download the latest version →](../../releases/latest)**
+**[Download Nymos for macOS →](https://nymos.io/nymos.dmg)**
 
 Requires macOS 14 (Sonoma) or later. Apple silicon and Intel.
 
@@ -35,5 +35,5 @@ Questions or problems: [support@nymos.io](mailto:support@nymos.io)
 
 ---
 
-This repository hosts Nymos releases and the update feed. The application
-source lives in a private repository.
+This repository only hosts the legacy Sparkle update feed for Nymos 1.0.
+Downloads live at [nymos.io](https://nymos.io). The application source is private.
