@@ -5,21 +5,6 @@
     <link>https://raw.githubusercontent.com/bartjan-hub/nymos-releases/main/appcast.xml</link>
     <description>Updates for Nymos.</description>
     <language>en</language>
-    <!--
-      LEGACY BRIDGE FEED (2026-07-29).
-
-      Nymos 1.0 shipped with SUFeedURL pointing at this file, so it has to keep
-      existing and this repository has to stay public until no 1.0 installs
-      remain. Its only job is to hand those installs an enclosure URL on
-      nymos.io; GitHub no longer serves the binary.
-
-      THE FEED THAT MATTERS NOW IS https://nymos.io/appcast.xml — edit that one
-      (public/appcast.xml in the nymos-website repo) for every release. Keep the
-      <item> list here in sync ONLY while 1.0 installs are still out there.
-
-      Once the app ships with SUFeedURL = https://nymos.io/appcast.xml and 1.0
-      is gone, this repository can be made private or deleted outright.
-    -->
     <item>
       <title>1.0</title>
       <pubDate>Wed, 29 Jul 2026 18:04:22 -0600</pubDate>
