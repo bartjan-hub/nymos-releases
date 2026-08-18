@@ -12,7 +12,15 @@
       <sparkle:shortVersionString>1.0.2</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
       <description><![CDATA[
-        <ul><li>What changed in this version.</li></ul>
+        <ul>
+          <li>Use your own AI provider. Connect your own account at one of nine providers, or any OpenAI-compatible endpoint, and rename on your own key. A new AI tab in Settings holds the setup, and a one-time lifetime licence is available in the app.</li>
+          <li>On a nymos subscription, documents are now processed in the European Union.</li>
+          <li>More formats, 57 in all: OpenDocument, Pages, Numbers and Keynote, plus audio and video named from the details the file carries.</li>
+          <li>Batches cope with limits. Files your model cannot read are flagged before the run and skipped rather than failing it, and a rate limit now waits and resumes instead of ending the batch.</li>
+          <li>A redrawn Settings window and new typefaces throughout the app.</li>
+          <li>Fixes: a locked keychain no longer starts a fresh trial, Command-Q quits with a sheet open, and the status pill appears only while a run is actually happening.</li>
+        </ul>
+      
       ]]></description>
       <enclosure url="https://nymos.io/nymos.dmg"
         type="application/octet-stream"
