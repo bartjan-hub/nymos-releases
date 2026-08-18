@@ -6,6 +6,19 @@
     <description>Updates for Nymos.</description>
     <language>en</language>
     <item>
+      <title>1.0.2</title>
+      <pubDate>Tue, 18 Aug 2026 23:51:57 +0000</pubDate>
+      <sparkle:version>23</sparkle:version>
+      <sparkle:shortVersionString>1.0.2</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <ul><li>What changed in this version.</li></ul>
+      ]]></description>
+      <enclosure url="https://nymos.io/nymos.dmg"
+        type="application/octet-stream"
+        sparkle:edSignature="FUpA9NE+S6JTLXP0KJLGUqm0pdYu4ZzOyeWJtkv83S4wwFwquPix8TnWVKykrSTHrGTBr3tjiTh7IjvGxi1nDA==" length="3508279" />
+    </item>
+    <item>
       <title>1.0.1</title>
       <pubDate>Thu, 30 Jul 2026 04:54:11 +0000</pubDate>
       <sparkle:version>22</sparkle:version>
