@@ -6,6 +6,19 @@
     <description>Updates for Nymos.</description>
     <language>en</language>
     <item>
+      <title>1.0.3</title>
+      <pubDate>Wed, 19 Aug 2026 03:54:52 +0000</pubDate>
+      <sparkle:version>24</sparkle:version>
+      <sparkle:shortVersionString>1.0.3</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <ul><li>Renaming with your own key now stays on your own key. If the key or endpoint is misconfigured, Nymos tells you instead of quietly finishing the job another way.</li><li>Audio and video files are named from their metadata again, instead of being skipped.</li><li>Changing your model re-opens the files it skipped, so you can name them straight away.</li><li>A provider rate limit now slows a batch down instead of stopping it, and a limit that will not clear ends the run with a clear message rather than waiting forever.</li><li>OpenRouter and custom endpoints keep their own model setting, and a model that reads images is recognised as one.</li><li>Local models over http can connect.</li><li>Fixes to the AI settings tab: the connection status no longer shows the previous provider's result, and &quot;Change model…&quot; from the skip dialog now opens Settings.</li></ul>
+      ]]></description>
+      <enclosure url="https://nymos.io/nymos.dmg"
+        type="application/octet-stream"
+        sparkle:edSignature="mMB+rruSAa8x5rjPFrVwYLNqS4mk6xzgqbEQyu0KbR2uhYwsfnG7nsEDokcHWch3aXUA7aXKiaQsx2/G33JMCA==" length="3527969" />
+    </item>
+    <item>
       <title>1.0.2</title>
       <pubDate>Tue, 18 Aug 2026 23:51:57 +0000</pubDate>
       <sparkle:version>23</sparkle:version>
